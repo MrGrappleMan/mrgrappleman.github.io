@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrGrappleMan | Systems & Rust</title>
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #03fcad, #00ffff, #0084ff);
+            --surface: #ffffff;
+            --text: #1e1e1e;
+            --border: #000000;
+        }
 
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* Neobrutalist + Adwaita Card Style */
+        .card {
+            background: var(--surface);
+            border: 3px solid var(--border);
+            border-radius: 12px; /* Adwaita-style rounding */
+            box-shadow: 8px 8px 0px var(--border); /* Neobrutalist shadow */
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h1, h2 { margin-top: 0; }
+        
+        .stack-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+
+        .tag {
+            background: #f0f0f0;
+            border: 2px solid var(--border);
+            padding: 0.5rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        code { background: #e0e0e0; padding: 0.2rem 0.4rem; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="card">
+            <h1>Hi, I'm MrGrappleMan ✌️</h1>
+            <p>Systems enthusiast focused on performance, safety, and modern Linux architecture.</p>
+        </header>
+
+        <section class="card">
+            <h2>🦀 Tech Stack</h2>
+            <div class="stack-grid">
+                <div class="tag">Rust</div>
+                <div class="tag">Zig</div>
+                <div class="tag">Python</div>
+                <div class="tag">Bazzite/GNOME</div>
+                <div class="tag">bootc</div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>🚀 Active Projects</h2>
+            <ul>
+                <li><strong>Aldehyde-LX:</strong> Automated deployment via custom bootc images.</li>
+                <li><strong>Rust Task Manager:</strong> Low-overhead system monitoring using <code>iced</code>.</li>
+                <li><strong>Distributed Computing:</strong> Running BOINC and Tor infrastructure on idler nodes.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>🖥️ The Rig: pc-corex</h2>
+            <p>Running on <strong>Ryzen 7 4800H</strong> with 16GB RAM. Optimized for atomic updates and immutable workflows.</p>
+        </section>
+    </div>
+</body>
+</html>
